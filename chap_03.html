@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="/LearnToProgram/tutorial.css" type="text/css" rel="Stylesheet" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&amp;subset=latin-ext,latin" rel="stylesheet" type="text/css" />
+    <title>
+      Variables and Assignment - Learn to Program
+    </title>
+    <script type="text/javascript">
+      
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-28406155-1']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      
+    </script>
+  </head>
+  <body>
+    <div>
+      <header>
+        <a href="/LearnToProgram/">
+        Learn to Program
+        </a>
+      </header>
+      <main>
+        <h1>
+          Variables and Assignment
+        </h1>
+        <h3>
+          Chapter 3
+        </h3>
+        <div class="hline">&nbsp;</div>
+        <p>
+                So far, whenever we have <span class="L2Pcode">puts</span>ed a string or a number, the thing
+      we <span class="L2Pcode">puts</span>ed is gone.  What I mean is, if we wanted to print
+      something out twice, we would have to type it in twice:
+
+        </p>
+        <pre class="L2PcodeBlock">puts '<span class="L2Pstring">...you can say that again...</span>'
+puts '<span class="L2Pstring">...you can say that again...</span>'</pre>
+        <pre class="L2PoutputBlock">
+...you can say that again...
+...you can say that again...
+</pre>
+        <p>
+                It would be nice if we could just type it in once and then hang on to it...
+      store it somewhere.
+      Well, we can, of course&mdash;otherwise, I wouldn't have brought it up!
+
+        </p>
+        <p>
+                To store the string in your computer's memory, we need to
+      give the string a name.  Programmers often refer to this process
+      as <dfn>assignment</dfn>,
+      and they call the names <dfn>variables</dfn>.  This variable can be just
+      about any sequence of letters and numbers, but the first character
+      needs to be a lowercase letter.  Let's try that last program again,
+      but this time I will give the string the name <span class="L2Pcode">myString</span> (though I could
+      just as well have named it <span class="L2Pcode">str</span> or
+      <span class="L2Pcode">myOwnLittleString</span> or <span class="L2Pcode">henryTheEighth</span>).
+
+        </p>
+        <pre class="L2PcodeBlock">myString = '<span class="L2Pstring">...you can say that again...</span>'
+puts myString
+puts myString</pre>
+        <pre class="L2PoutputBlock">
+...you can say that again...
+...you can say that again...
+</pre>
+        <p>
+                Whenever you tried to do something to <span class="L2Pcode">myString</span>, the program did it
+      to <span class="L2Pcode">'<span class="L2Pstring">...you&nbsp;can&nbsp;say&nbsp;that&nbsp;again...</span>'</span> instead.  You can think of the
+      variable <span class="L2Pcode">myString</span> as "pointing to" the string
+      <span class="L2Pcode">'<span class="L2Pstring">...you&nbsp;can&nbsp;say&nbsp;that&nbsp;again...</span>'</span>.  Here's a slightly more interesting example:
+
+        </p>
+        <pre class="L2PcodeBlock">name = '<span class="L2Pstring">Patricia Rosanna Jessica Mildred Oppenheimer</span>'
+puts '<span class="L2Pstring">My name is </span>' + name + '<span class="L2Pstring">.</span>'
+puts '<span class="L2Pstring">Wow!  </span>' + name + '<span class="L2Pstring"> is a really long name!</span>'</pre>
+        <pre class="L2PoutputBlock">
+My name is Patricia Rosanna Jessica Mildred Oppenheimer.
+Wow!  Patricia Rosanna Jessica Mildred Oppenheimer is a really long name!
+</pre>
+        <p>
+                Also, just as we can <em>assign</em> an object to a variable,
+      we can <em>reassign</em> a different object to that variable.
+      (This is why we call them variables:  because what they
+      point to can vary.)
+
+        </p>
+        <pre class="L2PcodeBlock">composer = '<span class="L2Pstring">Mozart</span>'
+puts composer + '<span class="L2Pstring"> was &quot;da bomb&quot;, in his day.</span>'
+
+composer = '<span class="L2Pstring">Beethoven</span>'
+puts '<span class="L2Pstring">But I prefer </span>' + composer + '<span class="L2Pstring">, personally.</span>'</pre>
+        <pre class="L2PoutputBlock">
+Mozart was &quot;da bomb&quot;, in his day.
+But I prefer Beethoven, personally.
+</pre>
+        <p>
+                Of course, variables can point to any kind of object, not just strings:
+
+        </p>
+        <pre class="L2PcodeBlock">var = '<span class="L2Pstring">just another </span>' + '<span class="L2Pstring">string</span>'
+puts var
+
+var = <span class="L2Pnumber">5</span> * (<span class="L2Pnumber">1</span>+<span class="L2Pnumber">2</span>)
+puts var</pre>
+        <pre class="L2PoutputBlock">
+just another string
+15
+</pre>
+        <p>
+                In fact, variables can point to just about anything...
+      except other variables.
+      So what happens if we try?
+
+        </p>
+        <pre class="L2PcodeBlock">var1 = <span class="L2Pnumber">8</span>
+var2 = var1
+puts var1
+puts var2
+
+puts '<span class="L2Pstring"></span>'
+
+var1 = '<span class="L2Pstring">eight</span>'
+puts var1
+puts var2</pre>
+        <pre class="L2PoutputBlock">
+8
+8
+
+eight
+8
+</pre>
+        <p>
+                So first, when we tried to point <span class="L2Pcode">var2</span> to <span class="L2Pcode">var1</span>, it really
+      pointed to <span class="L2Pcode"><span class="L2Pnumber">8</span></span> instead (just like <span class="L2Pcode">var1</span>
+      was pointing to).  Then we had <span class="L2Pcode">var1</span> point to
+      <span class="L2Pcode">'<span class="L2Pstring">eight</span>'</span>, but since <span class="L2Pcode">var2</span> was never really
+      pointing at <span class="L2Pcode">var1</span>, it stays pointing at <span class="L2Pcode"><span class="L2Pnumber">8</span></span>.
+
+        </p>
+        <p>
+                So now that we've got variables, numbers, and strings, let's learn how to
+      <a href="/LearnToProgram/chap_04.html">mix them all up</a>!
+
+        </p>
+      </main>
+      <footer>
+        <div class="hline">&nbsp;</div>
+        <p>
+          <a href="https://twitter.com/OtherChrisPine" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @OtherChrisPine</a>
+        </p>
+        <p>
+          &copy; 2003-2016 Chris Pine
+        </p>
+        <script type="text/javascript">
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+        </script>
+      </footer>
+    </div>
+    <nav>
+      <p class="fancyMenuText">
+        Buy the <em>improved</em>
+      </p>
+      <p class=" wideMenuText">
+        expanded
+      </p>
+      <p class="fancyMenuText">
+        version:
+      </p>
+      <a href="http://www.pragprog.com/titles/ltp2/learn-to-program-2nd-edition">
+      <img class="shadowed" width="200" height="240" src="/images/LTP2_cover.jpg" alt="Learn to Program, Second Edition" />
+      </a>
+      <p class="fancyMenuText">
+        <em>answers now included!</em>
+      </p>
+      <img class="divider" width="150" src="/images/divider.svg" alt="divider" />
+      <p>
+        &laquo; the original tutorial &raquo;
+      </p>
+      <ol start="0">
+        <li>
+          <a href="/LearnToProgram/chap_00.html">Getting Started</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_01.html">Numbers</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_02.html">Letters</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_03.html">Variables and Assignment</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_04.html">Mixing It Up</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_05.html">More About Methods</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_06.html">Flow Control</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_07.html">Arrays and Iterators</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_08.html">Writing Your Own Methods</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_09.html">Classes</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_10.html">Blocks and Procs</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_11.html">Beyond This Tutorial</a>
+        </li>
+      </ol>
+      <img class="divider" width="150" src="/images/divider.svg" alt="divider" />
+      <p>
+        &laquo; translations &raquo;
+      </p>
+      <table>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://sites.google.com/site/rubynabosanskom/>Bosnian</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;Rusmir&nbsp;Gadžo
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://aprendaaprogramar.rubyonrails.com.br/>Br. Portuguese</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;Fabio&nbsp;Akita&nbsp;et&nbsp;al.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://gcarst.googlepages.com/komgodtigang>Danish</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;Gunner&nbsp;Carstens
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://www.ruby-doc.org/docs/ApprendreProgrammer/Apprendre_a_Programmer.pdf>French</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;Jean&#8209;Pierre&nbsp;ANGHEL
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://www.moccasoft.de/papers/ruby_tutorial/>German</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;Anja&nbsp;Stiedl
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://www.imargar.gr/wp-content/uploads/2011/06/egxeiridiometafrasi.pdf>Greek</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;Ηλίας&nbsp;Μαργαριτίδης
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://nemboweb.com/corsi/imparare-a-programmare>Italian</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;Duccio&nbsp;Armenise
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://opentutorials.org/module/11>Korean</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;engfordev
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://www.shokhirev.com/mikhail/ruby/ltp/title.html>Russian</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;Mikhail&nbsp;Shokhirev
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://goo.gl/3UcZi>Spanish</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;David&nbsp;O'&nbsp;Rojo
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://rubysur.org/aprende.a.programar/>Spanish</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;rubysur
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://www.niyaziates.com.tr/rubyindex.html>Turkish</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;Niyazi&nbsp;ATEŞ
+            </p>
+          </td>
+        </tr>
+      </table>
+    </nav>
+  </body>
+</html>

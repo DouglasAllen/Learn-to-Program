@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="/LearnToProgram/tutorial.css" type="text/css" rel="Stylesheet" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&amp;subset=latin-ext,latin" rel="stylesheet" type="text/css" />
+    <title>
+      Numbers - Learn to Program
+    </title>
+    <script type="text/javascript">
+      
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-28406155-1']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+      
+    </script>
+  </head>
+  <body>
+    <div>
+      <header>
+        <a href="/LearnToProgram/">
+        Learn to Program
+        </a>
+      </header>
+      <main>
+        <h1>
+          Numbers
+        </h1>
+        <h3>
+          Chapter 1
+        </h3>
+        <div class="hline">&nbsp;</div>
+        <p>
+                Now that you've gotten everything <a href="/LearnToProgram/chap_00.html">setup</a>,
+      let's write a program!  Open up your favorite text
+      editor and type in the following:
+
+        </p>
+        <pre class="L2PcodeBlock">puts <span class="L2Pnumber">1</span>+<span class="L2Pnumber">2</span></pre>
+        <p>
+                Save your program (yes, that's a program!) as <span class="L2Pinput">calc.rb</span>
+      (the <strong>.rb</strong> is what we usually put at the end of
+      programs written in Ruby).  Now run your program by typing <span class="L2Pinput">ruby&nbsp;calc.rb</span>
+      into your command line.  It should have put a <span class="L2Poutput">3</span> on your screen.
+      See, programming isn't so hard, now is it?
+
+        </p>
+        <h2>
+          Introduction to <span class="L2Pcode">puts</span>
+        </h2>
+        <p>
+                So what's going on in that program?  I'm sure you can guess what the
+      <span class="L2Pcode"><span class="L2Pnumber">1</span>+<span class="L2Pnumber">2</span></span> does; our program is basically the same as:
+
+        </p>
+        <pre class="L2PcodeBlock">puts <span class="L2Pnumber">3</span></pre>
+        <p>
+                <span class="L2Pcode">puts</span> simply writes onto the screen whatever comes after it.
+
+        </p>
+        <h2>
+          Integer and Float
+        </h2>
+        <p>
+                In most programming languages (and Ruby is no exception)
+      numbers without decimal points are called <dfn>integers</dfn>, and
+      numbers with decimal points are usually called
+      <dfn>floating-point numbers</dfn>,
+      or more simply, <dfn>floats</dfn>.
+
+        </p>
+        <p>
+                Here are some integers:
+
+        </p>
+        <pre class="L2PcodeBlock"><span class="L2Pnumber">5</span>
+-<span class="L2Pnumber">205</span>
+<span class="L2Pnumber">9999999999999999999999999</span>
+<span class="L2Pnumber">0</span></pre>
+        <p>
+                And here are some floats:
+
+        </p>
+        <pre class="L2PcodeBlock"><span class="L2Pnumber">54.321</span>
+<span class="L2Pnumber">0.001</span>
+-<span class="L2Pnumber">205.3884</span>
+<span class="L2Pnumber">0.0</span></pre>
+        <p>
+                In practice, most programs don't use floats; only integers.
+      (After all, no one wants to look at 7.4 emails, or browse 1.8
+      webpages, or listen to 5.24 of their favorite songs...)
+      Floats are used more for academic purposes (physics experiments and such)
+      and for 3D graphics.  Even most money programs use integers; they just
+      keep track of the number of pennies!
+
+        </p>
+        <h2>
+          Simple Arithmetic
+        </h2>
+        <p>
+                So far, we've got all the makings of a simple calculator.
+      (Calculators always use floats, so if you want your computer
+      to act just like a calculator, you should also use floats.)  For addition
+      and subtraction, we use <kbd>+</kbd> and <kbd>-</kbd>,
+      as we saw.  For multiplication, we use <kbd>*</kbd>,
+      and for division we use <kbd>/</kbd>.  Most keyboards have
+      these keys in the numeric keypad on the far right side.
+      If you have a smaller keyboard or a laptop, though, you can just use
+      <kbd>Shift 8</kbd> and <kbd>/</kbd> (same key as the
+      <kbd>?</kbd> key).  Let's try to expand our calc.rb program a little.
+      Type in the following and then run it.
+
+        </p>
+        <pre class="L2PcodeBlock">puts <span class="L2Pnumber">1.0</span> + <span class="L2Pnumber">2.0</span>
+puts <span class="L2Pnumber">2.0</span> * <span class="L2Pnumber">3.0</span>
+puts <span class="L2Pnumber">5.0</span> - <span class="L2Pnumber">8.0</span>
+puts <span class="L2Pnumber">9.0</span> / <span class="L2Pnumber">2.0</span></pre>
+        <p>This is what the program returns:</p>
+        <pre class="L2PoutputBlock">
+3.0
+6.0
+-3.0
+4.5
+</pre>
+        <p>
+                (The spaces in the program are not important; they just make
+      the code easier to read.)  Well, that wasn't too surprising.
+      Now let's try it with integers:
+
+        </p>
+        <pre class="L2PcodeBlock">puts <span class="L2Pnumber">1</span>+<span class="L2Pnumber">2</span>
+puts <span class="L2Pnumber">2</span>*<span class="L2Pnumber">3</span>
+puts <span class="L2Pnumber">5</span>-<span class="L2Pnumber">8</span>
+puts <span class="L2Pnumber">9</span>/<span class="L2Pnumber">2</span></pre>
+        <p>Mostly the same, right?</p>
+        <pre class="L2PoutputBlock">
+3
+6
+-3
+4
+</pre>
+        <p>
+                Uh... except for that last one!
+      But when you do arithmetic with integers, you'll get integer answers.
+      When your computer can't get the "right" answer, it always rounds down.
+      (Of course, <span class="L2Poutput">4</span> <em>is</em> the right answer in integer arithmetic
+      for <span class="L2Pcode"><span class="L2Pnumber">9</span>/<span class="L2Pnumber">2</span></span>; just maybe not the answer you were expecting.)
+
+        </p>
+        <p>
+                Perhaps you're wondering what integer division is good for.  Well, let's
+      say you're going to the movies, but you only have $9.  Here in
+      Portland, you can see a movie at the Bagdad for 2 bucks.  How many movies
+      can you see there?  <span class="L2Pcode"><span class="L2Pnumber">9</span>/<span class="L2Pnumber">2</span></span>... <span class="L2Poutput">4</span> movies.  4.5
+      is definitely <em>not</em> the right answer in this case; they will
+      not let you watch half of a movie, or let half of you in to
+      see a whole movie... some things just aren't divisible.
+
+        </p>
+        <p>
+                So now experiment with some programs of your own!  If you want
+      to write more complex expressions, you can use parentheses.
+      For example:
+
+        </p>
+        <pre class="L2PcodeBlock">puts <span class="L2Pnumber">5</span> * (<span class="L2Pnumber">12</span>-<span class="L2Pnumber">8</span>) + -<span class="L2Pnumber">15</span>
+puts <span class="L2Pnumber">98</span> + (<span class="L2Pnumber">59872</span> / (<span class="L2Pnumber">13</span>*<span class="L2Pnumber">8</span>)) * -<span class="L2Pnumber">52</span></pre>
+        <pre class="L2PoutputBlock">
+5
+-29802
+</pre>
+        <h2>
+          A Few Things to Try
+        </h2>
+        <p>
+          Write a program which tells you:
+        </p>
+        <ul>
+          <li>
+            how many hours are in a year?
+          </li>
+          <li>
+            how many minutes are in a decade?
+          </li>
+          <li>
+            how many seconds old are you?
+          </li>
+          <li>
+            how many chocolates do you hope to eat in your life? <br /><em><strong>Warning:</strong>  This part of the program could take a while to compute!</em>
+          </li>
+        </ul>
+        <p>
+          Here's a tougher question:
+        </p>
+        <ul>
+          <li>
+            If I am 1245 million seconds old, how old am I?
+          </li>
+        </ul>
+        <p>
+                When you're done playing around with numbers, let's have a look
+      at some <a href="/LearnToProgram/chap_02.html">letters</a>.
+
+        </p>
+      </main>
+      <footer>
+        <div class="hline">&nbsp;</div>
+        <p>
+          <a href="https://twitter.com/OtherChrisPine" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @OtherChrisPine</a>
+        </p>
+        <p>
+          &copy; 2003-2016 Chris Pine
+        </p>
+        <script type="text/javascript">
+          !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+        </script>
+      </footer>
+    </div>
+    <nav>
+      <p class="fancyMenuText">
+        Buy the <em>improved</em>
+      </p>
+      <p class=" wideMenuText">
+        expanded
+      </p>
+      <p class="fancyMenuText">
+        version:
+      </p>
+      <a href="http://www.pragprog.com/titles/ltp2/learn-to-program-2nd-edition">
+      <img class="shadowed" width="200" height="240" src="/images/LTP2_cover.jpg" alt="Learn to Program, Second Edition" />
+      </a>
+      <p class="fancyMenuText">
+        <em>answers now included!</em>
+      </p>
+      <img class="divider" width="150" src="/images/divider.svg" alt="divider" />
+      <p>
+        &laquo; the original tutorial &raquo;
+      </p>
+      <ol start="0">
+        <li>
+          <a href="/LearnToProgram/chap_00.html">Getting Started</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_01.html">Numbers</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_02.html">Letters</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_03.html">Variables and Assignment</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_04.html">Mixing It Up</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_05.html">More About Methods</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_06.html">Flow Control</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_07.html">Arrays and Iterators</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_08.html">Writing Your Own Methods</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_09.html">Classes</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_10.html">Blocks and Procs</a>
+        </li>
+        <li>
+          <a href="/LearnToProgram/chap_11.html">Beyond This Tutorial</a>
+        </li>
+      </ol>
+      <img class="divider" width="150" src="/images/divider.svg" alt="divider" />
+      <p>
+        &laquo; translations &raquo;
+      </p>
+      <table>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://sites.google.com/site/rubynabosanskom/>Bosnian</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;Rusmir&nbsp;Gadžo
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://aprendaaprogramar.rubyonrails.com.br/>Br. Portuguese</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;Fabio&nbsp;Akita&nbsp;et&nbsp;al.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://gcarst.googlepages.com/komgodtigang>Danish</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;Gunner&nbsp;Carstens
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://www.ruby-doc.org/docs/ApprendreProgrammer/Apprendre_a_Programmer.pdf>French</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;Jean&#8209;Pierre&nbsp;ANGHEL
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://www.moccasoft.de/papers/ruby_tutorial/>German</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;Anja&nbsp;Stiedl
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://www.imargar.gr/wp-content/uploads/2011/06/egxeiridiometafrasi.pdf>Greek</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;Ηλίας&nbsp;Μαργαριτίδης
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://nemboweb.com/corsi/imparare-a-programmare>Italian</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;Duccio&nbsp;Armenise
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://opentutorials.org/module/11>Korean</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;engfordev
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://www.shokhirev.com/mikhail/ruby/ltp/title.html>Russian</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;Mikhail&nbsp;Shokhirev
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://goo.gl/3UcZi>Spanish</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;David&nbsp;O'&nbsp;Rojo
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://rubysur.org/aprende.a.programar/>Spanish</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;rubysur
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p class="translink">
+              <a href=http://www.niyaziates.com.tr/rubyindex.html>Turkish</a>
+            </p>
+          </td>
+          <td>
+            <p>
+              by&nbsp;Niyazi&nbsp;ATEŞ
+            </p>
+          </td>
+        </tr>
+      </table>
+    </nav>
+  </body>
+</html>
