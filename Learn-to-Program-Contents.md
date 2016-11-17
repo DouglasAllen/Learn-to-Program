@@ -21,10 +21,10 @@
 
 ### [Arrays and Iterators](https://github.com/DouglasAllen/Learn-to-Program/blob/master/Learn-to-Program-Chapter07.md)
 
-### [Writing Your Own Methods]()
+### [Writing Your Own Methods](https://github.com/DouglasAllen/Learn-to-Program/blob/master/Learn-to-Program-Chapter08.md)
 
-### [Classes]()
+### [Classes](https://github.com/DouglasAllen/Learn-to-Program/blob/master/Learn-to-Program-Chapter09.md)
 
-### [Blocks and Procs]()
+### [Blocks and Procs](https://github.com/DouglasAllen/Learn-to-Program/blob/master/Learn-to_Program-Chapter10.md)
 
-### [Beyond This Tutorial]()
+### [Beyond This Tutorial](https://github.com/DouglasAllen/Learn-to-Program/blob/master/Learn-to_Program-Chapter11.md)
