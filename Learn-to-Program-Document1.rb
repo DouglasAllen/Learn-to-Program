@@ -4712,7 +4712,7 @@ class LearnToProgramTutorial
     end
     para do
       '<a href="http://ruby-lang.org">'+
-        '<img src="/images/PoweredByRuby.png" alt="powered by Ruby" width="234" height="60" />'+
+        '<img src="./images/PoweredByRuby.png" alt="powered by Ruby" width="234" height="60" />'+
       '</a>'
     end
     puts @@HLINE

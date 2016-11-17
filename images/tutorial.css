@@ -12,7 +12,7 @@ body {
     /* one pixel image #791730 */
     background-image: url(data:image/gif;base64,R0lGODlhAQABAPAAAHkXMP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==);
     background-size: 100% 7rem;
-    /*background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
 }
 
 body>div {

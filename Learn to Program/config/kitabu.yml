@@ -1,0 +1,44 @@
+# The book's title. Will be used everywhere!
+title: ""
+
+# The book's language.
+language: en
+
+# Your book copyright info.
+# Here's some examples:
+#
+#   Copyright 2016 by John Doe.
+#   Copyright 2016 by John Doe. This work is licensed under MIT License.
+#   This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.
+#   This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License.
+#   This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+#
+copyright: ""
+
+# Who's publishing this book.
+publisher: ""
+
+# When this book was published.
+published_at: "2016-11-17"
+
+# Some book description.
+subject: ""
+
+# Some keywords that identify this book.
+keywords: "kitabu, e-book, kindlegen, epub, mobi, pdf, prince"
+
+# Some unique identification. Works great with your domain
+# like `http://yourbook.example.com`.
+uid: "416a2b6f01b8f2946e279859cdc6516f"
+
+# Your book identification like ISBN or ISSN.
+identifier:
+  id: "http://yourbook.example.com"
+  type: "URL" # can be ISBN, ISSN or URL
+
+# This book authors.
+authors:
+  - ""
+
+# Syntax highlight theme. Can be any of supported by Rouge.
+theme: github
