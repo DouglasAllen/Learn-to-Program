@@ -59,7 +59,7 @@ puts 9.0 / 2.0
 
 This is what the program returns:
 
-```ruby
+```console
 3.0
 6.0
 -3.0
@@ -77,7 +77,7 @@ puts 9 / 2
 
 Mostly the same, right?
 
-```ruby
+```console
 3
 6
 -3
@@ -95,7 +95,7 @@ puts 5 * (12 - 8) + -15
 puts 98 + (59872 / (13 * 8)) * -52
 ```
 
-```ruby
+```console
 5
 -29802
 ```
