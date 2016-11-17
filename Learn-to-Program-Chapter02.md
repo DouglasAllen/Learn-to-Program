@@ -151,8 +151,12 @@ However, you can't write 5*'pig', since that means 'pig' sets of the number 5, w
 
 Finally, what if I want a program to print out You're swell!? We can try this:
 
-```ruby
+```console
+irb(main):001:0> puts 'You're swell!'
+irb(main):002:0' '
+SyntaxError: (irb):1: syntax error, unexpected tIDENTIFIER, expecting end-of-input
 puts 'You're swell!'
+            ^
 ```
 
 Well, that won't work; I won't even try to run it. The computer thought we were done with the string. (This is why it's nice to have a
