@@ -1,0 +1,253 @@
+
+* {
+  margin:  0;
+  padding: 0;
+  border:  0;
+}
+
+body {
+  display:      flex;
+  min-height:  100vh;
+  background-repeat: no-repeat;
+  background: #FFF;
+
+  /* one pixel image #791730 */
+  background-image:
+    url(data:image/gif;base64,R0lGODlhAQABAPAAAHkXMP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==);
+
+  background-size: 100% 7rem;
+  background-repeat: no-repeat;
+}
+
+body > div {
+  flex:       1;
+  display:    flex;
+  flex-flow:  column;
+}
+
+main {
+  flex:   1;
+  width: 40rem;
+}
+
+header {
+  font-family: "Bookman Old Style", "Book Antiqua", "Libre Baskerville", serif;
+  height:      7rem;
+  font-size:   3rem;
+  display:     flex;
+  align-items: center;
+  color:       #FFF;
+}
+
+header a         { color: #FFF; text-decoration: none; }
+header a:hover   { color: #FFF; }
+header a:visited { color: #FFF; }
+
+footer {
+  width: 40rem;
+  margin-bottom: 1.5rem;
+  text-align: right;
+}
+
+footer p {
+  margin-top:    0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+
+body, p, ol, ul {
+  font-family: palatino, "Bookman Old Style", "Book Antiqua", serif;
+}
+
+ol, ul {
+  list-style-position: outside;
+}
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  line-height:   1.4rem;
+  margin-top:    0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+p {
+  margin-top:    0.9rem;
+  margin-bottom: 0.9rem;
+  line-height:   1.4rem;
+}
+img { display: block; }
+
+a          { color: #3a4;    }
+a:visited  { color: #807b71; }
+a:hover    { color: #3b4;    }
+
+abbr { cursor: help;  border-bottom: 1px dotted black; }
+
+
+/* NAV */
+
+
+nav {
+  order:              -1;
+  width:              27vw;
+  padding-top:         9rem;
+  display:    flex;
+  flex-flow:  column;
+  align-items: center;
+}
+
+nav img {
+  margin:        1rem;
+}
+
+nav a          { text-decoration: none;                   font-weight: normal; }
+nav a:visited  { color: #3a4;                             font-weight: normal; }
+nav a:hover    { color: #3b4; text-decoration: underline; font-weight: normal; }
+
+.divider {
+  margin: 30px;
+}
+.fancyMenuText {
+  letter-spacing: 1px;
+  padding:        0.2em;
+  font-size:     12px;
+  font-family: times, serif;
+}
+.wideMenuText {
+  letter-spacing: 6px;
+  font-variant: small-caps;
+  padding:        0.2em;
+  font-size:     12px;
+  font-family: times, serif;
+}
+.shadowed {
+  box-shadow: 0px 0px 10px 1px #999;
+}
+.translink {
+  text-align: right;
+}
+
+nav p, nav ol, nav ul, nav li {
+  /*letter-spacing:       1px;*/
+  font-size:           10px;
+  font-family: verdana, tahoma, helvetica, arial, sans-serif;
+  line-height:         1.3;
+  padding:             0.2em;
+  margin:              0;
+}
+nav ol, nav table {
+  padding-top:    1.5rem;
+}
+
+
+.hline {
+  border-bottom-width:   1px;
+  border-style:        solid;
+  border-color:         #ccc;
+}
+
+h1 {
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  font-variant: small-caps;
+  color:          #444;
+  margin-top:    2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: verdana, tahoma, helvetica, arial, sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color:          #444;
+  margin-top:    1.5rem;
+  margin-bottom: 1.3rem;
+}
+
+h3 {
+  font-family: verdana, tahoma, helvetica, arial, sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  color:          #ccc;
+  text-align: right;
+  margin-top:   -1.5rem;
+  margin-bottom: 0rem;
+}
+
+
+/***********************************
+********** L2P Stuff below *********
+***********************************/
+
+pre {
+  font-family:      'Source Code Pro', monospace;
+  white-space:      pre-wrap;
+}
+
+.L2Pinput {
+  font-family:      'Source Code Pro', monospace;
+  border:           #777 1px dashed;
+  border-radius:    0.2rem;
+  padding:          0.2rem;
+  white-space:      pre-wrap;
+  background-color: #fff;
+  font-variant:     normal;
+}
+
+.L2Pcode {
+  font-family:      'Source Code Pro', monospace;
+  white-space:      pre-wrap;
+  font-variant:     normal;
+}
+
+.L2Poutput {
+  font-family:      'Source Code Pro', monospace;
+  white-space:      pre-wrap;
+  background-color: #ddd;
+  border-radius:    0.2rem;
+  padding:          0.2rem;
+  font-variant:     normal;
+}
+
+.L2PcodeBlock {
+  font-family:      'Source Code Pro', monospace;
+  white-space:      pre-wrap;
+  border:           #ddd 1px solid;
+  border-radius:    0.4rem;
+  padding:          0.6rem;
+  margin-top:       0.8rem;
+  margin-bottom:    0.8rem;
+  font-variant:     normal;
+}
+
+.L2PoutputBlock {
+  font-family:    'Source Code Pro', monospace;
+  white-space:    pre-wrap;
+  background-color: #f0f0f0;
+  border-radius:  0.4rem;
+  padding:        0.6rem;
+  margin-top:     0.8rem;
+  margin-bottom:  0.8rem;
+  font-variant:   normal;
+}
+
+.L2PinputOutput {
+  font-family:      'Source Code Pro', monospace;
+  border:           #777 1px dashed;
+  border-radius:    0.2rem;
+  padding:          0.2rem;
+  white-space:      pre-wrap;
+  background-color: #fff;
+  font-variant:     normal;
+  display:          inline-block;
+}
+
+
+.L2Pstring     { color: #C02450; }
+.L2Pnumber     { color: #007f00; }
+.L2Pkeyword    { color: #0000ff; }
+.L2Pdefinition { color: #7f007f; }
+.L2Pcomment    { color: #909090; font-style: italic}
+

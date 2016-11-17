@@ -13,7 +13,7 @@ require 'cgi'
 require 'stringio'
 
 
-LINK_ADDR    = '/LearnToProgram/'
+LINK_ADDR    = './'
 FRLTP_ADDR   = 'http://www.pragprog.com/titles/ltp2/learn-to-program-2nd-edition'
 RUBY_DL_ADDR = 'https://www.ruby-lang.org/en/downloads/'
 
@@ -4745,7 +4745,7 @@ class LearnToProgramTutorial
     para(:class=>' wideMenuText') { 'expanded' }
     para(:class=>'fancyMenuText') { 'version:' }
     puts "<a href=\"#{FRLTP_ADDR}\">"
-      img(class: 'shadowed', width: '200', height: '240', src: '/images/LTP2_cover.jpg', alt: 'Learn to Program, Second Edition')
+      img(class: 'shadowed', width: '200', height: '240', src: './images/LTP2_cover.jpg', alt: 'Learn to Program, Second Edition')
     puts '</a>'
     para(:class=>'fancyMenuText') { '<em>answers now included!</em>' }
   end
@@ -4842,11 +4842,11 @@ class LearnToProgramTutorial
         nav do
           menuBookLink
 
-          img(class: 'divider', width: '150', src: '/images/divider.svg', alt: 'divider')
+          img(class: 'divider', width: '150', src: './images/divider.svg', alt: 'divider')
 
           menuTOC
 
-          img(class: 'divider', width: '150', src: '/images/divider.svg', alt: 'divider')
+          img(class: 'divider', width: '150', src: './images/divider.svg', alt: 'divider')
 
           menuTranslations
         end
