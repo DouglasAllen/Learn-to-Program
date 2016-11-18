@@ -30,7 +30,7 @@ var2 = '5'
 puts var1.to_s + var2
 ```
 
-```ruby
+```console
 25
 ```
 
@@ -45,7 +45,7 @@ puts var1.to_s + var2
 puts var1 + var2.to_i
 ```
 
-```ruby
+```console
 25
 7
 ```
@@ -68,7 +68,7 @@ puts 'stringy'.to_s
 puts 3.to_i
 ```
 
-```ruby
+```console
 15.0
 99.999
 99
@@ -99,7 +99,7 @@ puts 20.to_s
 puts '20'
 ```
 
-```ruby
+```console
 20
 20
 20
@@ -129,11 +129,11 @@ reading what you type until you press Enter. Let's try it out:
 puts gets
 ```
 
-```ruby
+```console
 Is there an echo in here?
 ```
 
-```ruby
+```console
 Is there an echo in here?
 ```
 
@@ -150,7 +150,7 @@ puts 'Pleased to meet you, ' + name + '.  :)'
 
 Eek! I just ran it—I typed in my name, and this is what happened:
 
-```ruby
+```console
 Hello there, and what's your name?
 Chris
 Your name is Chris
@@ -170,7 +170,7 @@ puts 'Your name is ' + name + '?  What a lovely name!'
 puts 'Pleased to meet you, ' + name + '.  :)'
 ```
 
-```ruby
+```console
 Hello there, and what's your name?
 Chris
 Your name is Chris?  What a lovely name!
@@ -182,6 +182,8 @@ Much better! Notice that since name is pointing to gets.chomp, we don't ever hav
 ### A Few Things to Try
 
 Write a program which asks for a person's first name, then middle, then last. Finally, it should greet the person using their full name.
+
 Write a program which asks for a person's favorite number. Have your program add one to the number, then suggest the result as a bigger and better favorite number. 
 (Do be tactful about it, though.)
+
 Once you have finished those two programs (and any others you would like to try), let's learn some more (and some more about) methods.

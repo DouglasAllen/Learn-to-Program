@@ -18,7 +18,7 @@ puts 1 > 2
 puts 1 < 2
 ```
 
-```ruby
+```console
 false
 true
 ```
@@ -30,7 +30,7 @@ puts 5 >= 5
 puts 5 <= 4
 ```
 
-```ruby
+```console
 true
 false
 ```
@@ -43,7 +43,7 @@ puts 1 == 1
 puts 2 != 1
 ```
 
-```ruby
+```console
 true
 true
 ```
@@ -53,6 +53,9 @@ cat comes before dog in the dictionary, so:
 
 ```ruby
 puts 'cat' < 'dog'
+```
+
+```console
 true
 ```
 
@@ -76,7 +79,7 @@ if name == 'Chris'
 end
 ```
 
-```ruby
+```console
 Hello, what's your name?
 Chris
 Hello, Chris.
@@ -85,7 +88,7 @@ What a lovely name!
 
 But if we put in a different name...
 
-```ruby
+```console
 Hello, what's your name?
 Chewbacca
 Hello, Chewbacca.
@@ -109,7 +112,7 @@ else
 end
 ```
 
-```ruby
+```console
 I am a fortune-teller.  Tell me your name:
 Chris
 I see great things in your future.
@@ -117,7 +120,7 @@ I see great things in your future.
 
 Now let's try a different name...
 
-```ruby
+```console
 I am a fortune-teller.  Tell me your name:
 Ringo
 Your future is... Oh my!  Look at the time!
@@ -148,7 +151,7 @@ else
 end
 ```
 
-```ruby
+```console
 Hello, and welcome to 7th grade English.
 My name is Mrs. Gabbard.  And your name is...?
 chris
@@ -160,7 +163,7 @@ Hmmph!  Well, sit down!
 
 Fine, I'll capitalize it...
 
-```ruby
+```console
 Hello, and welcome to 7th grade English.
 My name is Mrs. Gabbard.  And your name is...?
 Chris
@@ -241,7 +244,7 @@ end
 puts 'Come again soon!'
 ```
 
-```ruby
+```console
 Hello?
 Hello?
 Hi!
@@ -280,7 +283,7 @@ else
 end
 ```
 
-```ruby
+```console
 Hello, what's your name?
 Katy
 Hello, Katy.
@@ -301,7 +304,7 @@ if (name == 'Chris' or name == 'Katy')
 end
 ```
 
-```ruby
+```console
 Hello, what's your name?
 Katy
 Hello, Katy.
@@ -331,7 +334,7 @@ puts (not iAmPurple)
 puts (not iAmChris )
 ```
 
-```ruby
+```console
 true
 false
 false

@@ -66,7 +66,7 @@ Finally, we tried puts names[3], just to see what would happen. Were you expecti
 If all this funny numbering of array slots is getting to you, fear not! Often, we can avoid them completely by using various array
  methods, like this one:
 
-## The Method each
+### The Method each
 
 each allows us to do something (whatever we want) to each object the array points to. So, if we want to say something nice about each
  language in the array below, we'd do this:
@@ -121,7 +121,7 @@ Hip-Hip-Hooray!
 Hip-Hip-Hooray!
 ```
 
-## More Array Methods
+### More Array Methods
 
 So we've learned each, but there are many other array methods... almost as many as there are string methods! In fact, some of them 
 (like length, reverse, +, and *) work just like they do for strings, except that they operate on the slots of the array rather than the
@@ -193,13 +193,16 @@ raindrops on roses
 1
 ```
 
-## A Few Things to Try
+### A Few Things to Try
 
 Write the program we talked about at the very beginning of this chapter.
 Hint: There's a lovely array method which will give you a sorted version of an array: sort. Use it!
+
 Try writing the above program without using the sort method. A large part of programming is solving problems, so get all the practice
  you can!
+
 Rewrite your Table of Contents program (from the chapter on methods). Start the program with an array holding all of the information for
  your Table of Contents (chapter names, page numbers, etc.). Then print out the information from the array in a beautifully formatted
   Table of Contents.
+
 So far we have learned quite a number of different methods. Now it's time to learn how to make our own.

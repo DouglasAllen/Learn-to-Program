@@ -23,7 +23,7 @@ puts 'hello '.+ 'world'
 puts (10.* 9).+ 9
 ```
 
-```ruby
+```console
 hello world
 99
 ```
@@ -44,7 +44,7 @@ puts iCantBelieveIMadeAVariableNameThisLongJustToPointToA3
 self.puts iCantBelieveIMadeAVariableNameThisLongJustToPointToA3
 ```
 
-```ruby
+```console
 3
 3
 ```
@@ -75,7 +75,7 @@ puts var2
 puts var3
 ```
 
-```ruby
+```console
 pots
 desserts
 ?sdrawkcab ecnetnes siht ecnuonorp uoy naC
@@ -96,7 +96,7 @@ puts 'Did you know there are ' + name.length +
      ' characters in your name, ' + name + '?'
 ```
 
-```ruby
+```console
 What is your full name?
 Christopher David Pine
 #<TypeError: no implicit conversion of Fixnum into String>
@@ -113,7 +113,7 @@ puts 'Did you know there are ' + name.length.to_s +
      ' characters in your name, ' + name + '?'
 ```
 
-```ruby
+```console
 What is your full name?
 Christopher David Pine
 Did you know there are 22 characters in your name, Christopher David Pine?
@@ -138,7 +138,7 @@ puts ' a'.capitalize
 puts letters
 ```
 
-```ruby
+```console
 AABBCCDDEE
 aabbccddee
 AaBbCcDdEe
@@ -165,7 +165,7 @@ puts(         'Which sat down beside her'.center(lineWidth))
 puts('And scared her poor shoe dog away.'.center(lineWidth))
 ```
 
-```ruby
+```console
                 Old Mother Hubbard
                Sat in her cupboard
             Eating her curds an whey,
@@ -196,7 +196,7 @@ puts str.rjust  lineWidth
 puts str.ljust(lineWidth/2) + str.rjust(lineWidth/2)
 ```
 
-```ruby
+```console
 --> text <--
               --> text <--
                             --> text <--
@@ -241,7 +241,7 @@ puts 7 % 3
 puts 365 % 7
 ```
 
-```ruby
+```console
 25
 2.23606797749979
 2
@@ -259,7 +259,7 @@ puts((5 - 2).abs)
 puts((2 - 5).abs)
 ```
 
-```ruby
+```console
 3
 3
 ```
@@ -287,7 +287,7 @@ puts('The weatherman said there is a ' + rand(101).to_s + '% chance of rain,')
 puts('but you can never trust a weatherman.')
 ```
 
-```ruby
+```console
 0.17429261270690644
 0.6038796470847551
 0.5357456897902644
@@ -326,7 +326,7 @@ puts(rand(100))
 puts(rand(100))
 ```
 
-```ruby
+```console
 24
 35
 36
@@ -356,7 +356,7 @@ puts(Math.log(Math::E ** 2))
 puts((1 + Math.sqrt(5)) / 2)
 ```
 
-```ruby
+```console
 3.141592653589793
 2.718281828459045
 0.5000000000000001
