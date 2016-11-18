@@ -4795,7 +4795,7 @@ class LearnToProgramTutorial
     html do
       head do
         meta(charset: 'UTF-8')
-        link(:href=>LINK_ADDR+'tutorial.css', :type=>'text/css', :rel=>'Stylesheet', :media=>'screen')
+        link(:href=>LINK_ADDR+'pdf.css', :type=>'text/css', :rel=>'Stylesheet', :media=>'screen')
         link(href: 'https://fonts.googleapis.com/css?family=Libre+Baskerville', rel: 'stylesheet', type: 'text/css')
         link(href: 'https://fonts.googleapis.com/css?family=Source+Code+Pro&amp;subset=latin-ext,latin', rel: 'stylesheet', type: 'text/css')
         title { pageTitle }
